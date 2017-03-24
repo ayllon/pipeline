@@ -146,5 +146,6 @@ func main() {
 	http.HandleFunc("/", HomeHandler)
 	http.Handle("/socket", websocket.Handler(WebSocketProxy))
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir(staticDir+"/"))))
+    logrus.Info("Listening on http://localhost:8080")
 	logrus.Fatal(http.ListenAndServe(":8080", nil))
 }
