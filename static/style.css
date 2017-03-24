@@ -1,0 +1,18 @@
+#shell {
+    background: black;
+    width: 82em;
+    height: 22em;
+    color: white;
+    font-family: monospace;
+    padding: 1em;
+    overflow-y: scroll;
+}
+
+#shell p {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+#shell .comment {
+    color: cyan;
+}

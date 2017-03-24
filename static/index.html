@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>WebSocket test</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" href="/static/style.css"/>
+    <script src="/static/websocket.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <h1>WebSocket test</h1>
+
+    <div id="shell">
+        <p class="comment"># Shell</p>
+    </div>
+    <input type="text" value="" id="command"/>
+
+
+    <script>
+        AttachProxy("shell", "command");
+    </script>
+</body>
+</html>
